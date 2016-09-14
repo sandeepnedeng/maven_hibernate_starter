@@ -36,6 +36,22 @@ public class DBTest {
     }
 
     @Test
+    public void demoExperimentAnnotation() {
+
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+
+        AnnotatedUser user = new AnnotatedUser("testUser", "testUser@testUser.com");
+        session.save(user);
+
+        session.getTransaction().commit();
+
+        List list = session.createCriteria(AnnotatedUser.class).add(Restrictions.eq("userName", "testUser")).list();
+        assertNotNull(list);
+        assertEquals("testUser", ((AnnotatedUser)list.get(0)).getUserName());
+    }
+
+    @Test
     public void yourExperimentHere() {
 
         // Go Crazy

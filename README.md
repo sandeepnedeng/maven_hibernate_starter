@@ -16,8 +16,7 @@ This is a Starter project, its purpose is to just give you a basic skeleton on w
 
 # A Test:
 
-    When you have done all the set up right, and just execute mvn test, the mvn test has to pass, that says all the set
-    up is done right and you can Go Crazy with your experiment.
+When you have done all the set up right, and just execute mvn test, the mvn test has to pass, that says all the setup is done right and you can Go Crazy with your experiment.
 
 # How to use this ?
 

@@ -7,6 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ *  Here, ye. Here ye
+ *
+ * NOTICE: YOU HAVE TO ADD YOUR CLASS TO hibernate.cfg.xml
+ * 
+ * */
 @Entity
 @Table(name = "A_TABLE")
 @Data
